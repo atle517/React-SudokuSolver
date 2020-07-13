@@ -1,0 +1,110 @@
+.App {
+  text-align: center;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+h1 {
+  font: 400 50px 'Oleo Script', Helvetica, sans-serif;
+  color: #2b2b2b;
+  text-shadow: 6px 6px #00000042;
+  
+}
+
+table {
+  border: 3px solid black;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+.shake {
+  animation: shake 0.2s cubic-bezier(.36, .07, .19, .97) both;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+td {
+  height: 2em;
+  width: 2em;
+  border: 1px solid black;
+  text-align: center;
+  outline: none;
+}
+
+td:nth-child(3n) {
+  border-right: 3px solid black;
+}
+
+tr:nth-child(3n) {
+  border-bottom: 3px solid black;
+}
+
+.button-submit{
+  width: 200px;
+
+  border: none;
+
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+
+  transition-duration: 0.05s;
+
+}
+
+.button-submit:hover {
+  background-color: #3c863d; /* Green */
+}
+
+.button-submit:active {
+  background-color: #214b22;
+  transform: translateY(4px);
+  border: none;
+}
+
+.text-error {
+  color: red;
+
+  font-family: 'Calibri';
+
+  animation: fadeIn 0.25s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
